@@ -296,3 +296,21 @@ tr:hover .row-actions, .row-actions:focus-within { opacity: 1; }
   .pagination button { padding: 0 6px; }
   .toast-message { right: 12px; bottom: 12px; left: 12px; justify-content: center; }
 }
+
+.payroll-metrics .metric-value { font-size: 25px; }
+.payroll-metrics .money-value { font-size: clamp(17px, 1.65vw, 24px); font-variant-numeric: tabular-nums; }
+.payroll-table-scroll { overflow-x: auto; }
+.payroll-table { min-width: 1320px; }
+.payroll-table th, .payroll-table td { white-space: nowrap; }
+.payroll-table .employee-copy { min-width: 175px; }
+.payroll-table .employee-email { max-width: 200px; overflow: hidden; text-overflow: ellipsis; }
+.money-cell { text-align: right; font-variant-numeric: tabular-nums; }
+.designation-pill { display: inline-flex; align-items: center; padding: 5px 9px; border-radius: 99px; background: #f0edff; color: #6856ce; font-size: 10px; font-weight: 600; }
+.form-error { padding: 10px 11px; margin: 0; border: 1px solid #f4d4d4; border-radius: 7px; background: #fff8f8; color: #a73a3a; font-size: 11px; line-height: 1.5; }
+.employee-form button:disabled { cursor: wait; opacity: .65; }
+@media (max-width: 600px) {
+  .payroll-table th:nth-child(n), .payroll-table td:nth-child(n) { display: table-cell; }
+  .payroll-metrics .metric-value { font-size: 19px; }
+  .payroll-metrics .money-value { font-size: 16px; }
+  .payroll-modal { max-height: calc(100vh - 28px); overflow-y: auto; }
+}
